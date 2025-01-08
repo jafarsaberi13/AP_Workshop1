@@ -12,5 +12,17 @@ public class calculuter {
         
         System.out.println("Enter the second number: ");
         int number2 = scanner.nextInt();
+
+        if (c.equals("+")) {
+            System.out.println(number1 + " +" + " " + number2 + " = " + (number1 + number2));
+        } else if (c.equals("-")) {
+            System.out.println(number1 + " -" +  " " + number2 + " = " + (number1 - number2));
+        } else if (c.equals("*")) {
+            System.out.println(number1 + " *" +  " " + number2 + " = " + (number1 * number2));
+        } else if (c.equals("/")) {
+            System.out.println(number1 + " /" +  " " + number2 + " = " + (number1 / number2));
+        } else {
+            System.out.println("Invalid input");
+        }
     }
 }
